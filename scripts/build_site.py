@@ -9,7 +9,7 @@ CSS = "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&f
 RESEARCH_EN = """
       <h2 id="research" class="section-title">🔬 Research Interests</h2>
       <p class="section-note research-lead">
-        <strong class="lab-name">LingVision Lab (灵境智能研究组)</strong> focuses on multimodal foundation models that perceive, reason about, and act upon complex visual worlds. Our research directions span general video understanding as well as medical, industrial, and sports applications.
+        <strong class="lab-name">LingVision Lab</strong> focuses on multimodal foundation models that perceive, reason about, and act upon complex visual worlds. Our research directions span general video understanding as well as medical, industrial, and sports applications.
       </p>
       <div class="research">
         <article class="research-theme">
@@ -274,7 +274,7 @@ def page(
         html_lang = "en"
         footer = '© <span id="y"></span> Chenghang Lai. Hosted on GitHub Pages · <a href="https://github.com/chlai1111/chlai1111.github.io">Source</a>'
         nav = NAV_EN
-        author_name = "Chenghang Lai (赖承杭)"
+        author_name = "Chenghang Lai"
         author_bio = "Wenzhou University"
         author_lab = "Director, LingVision Lab"
         meta_loc = "Wenzhou, China"
@@ -372,8 +372,8 @@ def main():
       <h1 id="biography" class="page-title">Biography</h1>
       <div class="bio">
         <p>
-          I am a <strong>lecturer at <a href="https://www.wzu.edu.cn/">Wenzhou University (温州大学)</a></strong>
-          and the <strong>director of LingVision Lab (灵境智能研究组)</strong>.
+          I am a <strong>lecturer at <a href="https://www.wzu.edu.cn/">Wenzhou University</a></strong>
+          and the <strong>director of LingVision Lab</strong>.
           I received my Ph.D. from the <a href="https://cs.fudan.edu.cn/">School of Computer Science</a>,
           <a href="https://fudan.edu.cn/">Fudan University</a> (2021.9–2025.6).
           <strong>My research focuses on multimodal large language models, world models, and multi-agent systems, with applications in general video understanding, medical imaging, industrial inspection, and sports analytics.</strong>
@@ -393,7 +393,7 @@ def main():
 {RESEARCH_EN}
 """.strip()
     write(ROOT / "index.html", page(
-        lang="en", depth=0, slug="", title="Chenghang Lai (赖承杭) — Personal Homepage",
+        lang="en", depth=0, slug="", title="Chenghang Lai — Personal Homepage",
         description="Academic homepage of Chenghang Lai, lecturer at Wenzhou University and director of LingVision Lab. Research interests: multimodal large language models, world models, and multi-agent systems.",
         active="", main_html=en_home, show_sidebar=True,
     ))
@@ -438,27 +438,27 @@ def main():
       <h1 class="page-title">👥 Students</h1>
       <h3 class="subhead">Master’s Students · Class of 2025</h3>
       <ul class="plain-list">
-        <li>Xue Zekun (薛泽坤) · Wenzhou University</li>
-        <li>Chen Jiong (陈炅) · Wenzhou University</li>
-        <li>Wu Boxuan (吴波炫) · Wenzhou Medical University</li>
+        <li>Xue Zekun · Wenzhou University</li>
+        <li>Chen Jiong · Wenzhou University</li>
+        <li>Wu Boxuan · Wenzhou Medical University</li>
       </ul>
       <h3 class="subhead">Master’s Students · Class of 2026</h3>
       <ul class="plain-list">
-        <li>Xie Yi (谢益) · Wenzhou University</li>
-        <li>Lu Jiaming (陆佳明) · Wenzhou University</li>
-        <li>Chen Yuxuan (陈雨轩) · Wenzhou University</li>
-        <li>Zhang Yangliu (张杨柳) · Wenzhou University</li>
-        <li>Xu Junchang (许俊昌) · Wenzhou University</li>
+        <li>Xie Yi · Wenzhou University</li>
+        <li>Lu Jiaming · Wenzhou University</li>
+        <li>Chen Yuxuan · Wenzhou University</li>
+        <li>Zhang Yangliu · Wenzhou University</li>
+        <li>Xu Junchang · Wenzhou University</li>
       </ul>
       <h3 class="subhead">Undergraduate Students · Class of 2025</h3>
       <ul class="plain-list">
-        <li>Huang Xiaorui (黄小芮) · Wenzhou University</li>
-        <li>Ye Mengya (叶梦雅) · Wenzhou University</li>
-        <li>Lü Dingtian (吕鼎天) · Wenzhou University</li>
+        <li>Huang Xiaorui · Wenzhou University</li>
+        <li>Ye Mengya · Wenzhou University</li>
+        <li>Lü Dingtian · Wenzhou University</li>
       </ul>
       <h3 class="subhead">Undergraduate Students · Class of 2026</h3>
       <ul class="plain-list">
-        <li>Guo Qiming (郭骐铭) · Wenzhou University</li>
+        <li>Guo Qiming · Wenzhou University</li>
       </ul>
 """.strip()
     write(ROOT / "students" / "index.html", page(
