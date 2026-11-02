@@ -440,7 +440,7 @@ def main():
       <ul class="plain-list">
         <li>Xue Zekun (薛泽坤) · Wenzhou University</li>
         <li>Chen Jiong (陈炅) · Wenzhou University</li>
-        <li>Wu Boxuan (吴波炫) · Wenzhou University</li>
+        <li>Wu Boxuan (吴波炫) · Wenzhou Medical University</li>
       </ul>
       <h3 class="subhead">Master’s Students · Class of 2026</h3>
       <ul class="plain-list">
@@ -538,7 +538,7 @@ def main():
       <ul class="plain-list">
         <li>薛泽坤（Xue Zekun）· 温州大学</li>
         <li>陈炅（Chen Jiong）· 温州大学</li>
-        <li>吴波炫（Wu Boxuan）· 温州大学</li>
+        <li>吴波炫（Wu Boxuan）· 温州医科大学</li>
       </ul>
       <h3 class="subhead">硕士研究生 · 26级</h3>
       <ul class="plain-list">
