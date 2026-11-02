@@ -4,3 +4,6 @@ _site/
 .bundle/
 vendor/
 *.log
+
+__pycache__/
+*.pyc

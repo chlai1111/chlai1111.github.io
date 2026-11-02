@@ -38,6 +38,13 @@ a:hover { text-decoration: underline; }
   justify-content: space-between;
   gap: 1rem;
 }
+.masthead__right {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 .site-title {
   font-family: "Libre Baskerville", "Songti SC", Georgia, serif;
   font-size: 1.05rem;
@@ -51,7 +58,23 @@ a:hover { text-decoration: underline; }
   font-size: 0.95rem;
   font-weight: 600;
 }
-.nav a:hover { color: var(--accent); }
+.nav a:first-child { margin-left: 0; }
+.nav a:hover,
+.nav a.is-active { color: var(--accent); }
+.nav a.is-active { text-decoration: underline; text-underline-offset: 0.28em; }
+.lang-switch {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.22rem 0.75rem;
+  white-space: nowrap;
+}
+.lang-switch:hover {
+  text-decoration: none;
+  background: #eef3f8;
+}
 
 .layout {
   max-width: 1120px;
@@ -60,6 +83,9 @@ a:hover { text-decoration: underline; }
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 2rem;
+}
+.layout--wide {
+  grid-template-columns: 1fr;
 }
 
 .sidebar {
@@ -124,6 +150,42 @@ a:hover { text-decoration: underline; }
 }
 .plain-list li { margin: 0.35rem 0; }
 
+.recruit-note {
+  margin: 1rem 0 0.35rem;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid #b23a48;
+  background: #fbf7f4;
+  color: #3a2f2c;
+  font-weight: 600;
+}
+.research {
+  margin-top: 0.35rem;
+}
+.research-theme {
+  margin: 0 0 1.15rem;
+  padding-bottom: 0.35rem;
+}
+.research-theme__title {
+  margin: 0.85rem 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1b1a18;
+}
+.research-theme__lead {
+  margin: 0 0 0.55rem;
+  color: var(--text);
+}
+.research-subhead {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #8b3a3a;
+}
+.more-link {
+  margin: 0.75rem 0 0;
+  font-weight: 600;
+}
+
 .main {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -175,5 +237,6 @@ a:hover { text-decoration: underline; }
   .layout { grid-template-columns: 1fr; }
   .sidebar { position: static; }
   .masthead__inner { flex-direction: column; align-items: flex-start; }
+  .masthead__right { justify-content: flex-start; }
   .nav a { margin-left: 0; margin-right: 1rem; }
 }
