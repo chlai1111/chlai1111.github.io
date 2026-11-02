@@ -8,8 +8,8 @@ CSS = "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&f
 
 RESEARCH_EN = """
       <h2 id="research" class="section-title">🔬 Research Interests</h2>
-      <p class="section-note">
-        I study how multimodal foundation models can perceive, reason about, and act upon complex visual worlds—across general, medical, industrial, and sports settings.
+      <p class="section-note research-lead">
+        <strong class="lab-name">LingVision Lab (灵境智能研究组)</strong> focuses on multimodal foundation models that perceive, reason about, and act upon complex visual worlds. Our research directions span general video understanding as well as medical, industrial, and sports applications.
       </p>
       <div class="research">
         <article class="research-theme">
@@ -56,8 +56,8 @@ RESEARCH_EN = """
 
 RESEARCH_ZH = """
       <h2 id="research" class="section-title">🔬 研究方向</h2>
-      <p class="section-note">
-        关注多模态基础模型如何感知、理解并作用于复杂视觉世界，覆盖通用、医学、工业与体育等场景。
+      <p class="section-note research-lead">
+        <strong class="lab-name">灵境智能研究组（LingVision Lab）</strong> 聚焦多模态基础模型对复杂视觉世界的感知、推理与交互，研究方向覆盖通用视频理解以及医学、工业与体育等应用场景。
       </p>
       <div class="research">
         <article class="research-theme">

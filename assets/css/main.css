@@ -144,6 +144,15 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
   font-size: 0.95rem;
 }
+.research-lead {
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.lab-name {
+  color: var(--accent);
+  font-weight: 700;
+}
 .subhead {
   margin: 1rem 0 0.4rem;
   font-size: 1.02rem;
