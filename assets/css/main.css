@@ -105,6 +105,24 @@ a:hover { text-decoration: underline; }
 }
 .author-meta a { color: var(--text); font-weight: 600; }
 .author-meta .label { color: var(--muted); font-weight: 500; margin-right: 0.35rem; }
+.author-meta .plain { color: var(--text); font-weight: 600; }
+
+.section-note {
+  margin: -0.25rem 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.subhead {
+  margin: 1rem 0 0.4rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #1b1a18;
+}
+.plain-list {
+  margin: 0 0 0.6rem;
+  padding-left: 1.15rem;
+}
+.plain-list li { margin: 0.35rem 0; }
 
 .main {
   background: var(--panel);
