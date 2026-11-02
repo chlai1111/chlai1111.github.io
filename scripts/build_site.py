@@ -124,78 +124,94 @@ NEWS_ITEMS_ZH = [
     '2024/08：论文“Object-Centric Cross-Modal Knowledge Reasoning for Future Event Prediction in Videos”被 <strong><em>IEEE</em> TCSVT</strong> 接收。',
 ]
 
-PUBS = """
-        <li>
-          <div class="title">Instruction-guided fusion of multi-layer visual features in Large Vision-Language Models</div>
-          <div class="authors">X Li, Y Zheng, H Chen, X Chen, Y Liang, <strong>C Lai</strong>, B Li, X Xue</div>
-          <div class="venue">Pattern Recognition, Vol. 170, Article 111932, 2026</div>
-        </li>
-        <li>
-          <div class="title">Multiple myeloma cell segmentation based on position prior information guidance in medical imaging</div>
-          <div class="authors">D Li, J Zhang, Y Li, Q Wang, H Shen, <strong>C Lai</strong>, Y Tan, F Zhou</div>
-          <div class="venue">Pattern Recognition, Vol. 179, Article 113744, 2026</div>
-        </li>
-        <li>
-          <div class="title">Adapting Multimodal Large Language Models for Video Question Answering by Capturing Question-Critical and Coherent Moments</div>
-          <div class="authors">H Wang, <strong>C Lai</strong>, W Ge</div>
-          <div class="venue">IEEE Transactions on Multimedia, Vol. 27, pp. 8737-8747, 2025</div>
-        </li>
-        <li>
-          <div class="title">Cross-Modal Complementary Learning and Template-Based Reasoning Chains for Future Event Prediction in Videos</div>
-          <div class="authors"><strong>C Lai</strong>, W Ge, X Xue</div>
-          <div class="venue">IEEE Transactions on Multimedia, Vol. 27, pp. 7497-7509, 2025</div>
-        </li>
-        <li>
-          <div class="title">VFE: A large-scale video future event description dataset for evaluating video temporal prediction</div>
-          <div class="authors"><strong>C Lai</strong>, H Wang</div>
-          <div class="venue">Applied Intelligence, Vol. 55, Article 713, 2025</div>
-        </li>
-        <li>
-          <div class="title">MKER: Multi-Modal Knowledge Extraction and Reasoning for Future Event Prediction</div>
-          <div class="authors"><strong>C Lai</strong>, S Qiu</div>
-          <div class="venue">Complex &amp; Intelligent Systems, Vol. 11(2), 2025</div>
-        </li>
-        <li>
-          <div class="title">视觉语言大模型的幻觉综述：成因、评估与治理</div>
-          <div class="authors">李煦, 朱睿, 陈小磊, 伍瑾轩, 郑毅, <strong>赖承杭</strong>, 梁宇轩, 李斌, 薛向阳</div>
-          <div class="venue">计算机研究与发展, 2025年第12期</div>
-        </li>
-        <li>
-          <div class="title">Object-Centric Cross-Modal Knowledge Reasoning for Future Event Prediction in Videos</div>
-          <div class="authors"><strong>C Lai</strong>, H Wang, W Ge, X Xue</div>
-          <div class="venue">IEEE Transactions on Circuits and Systems for Video Technology, Vol. 34, Issue 12, 2024</div>
-        </li>
-        <li>
-          <div class="title">Weakly Supervised Gaussian Contrastive Grounding with Large Multimodal Models for Video Question Answering</div>
-          <div class="authors">H Wang, <strong>C Lai</strong>, Y Sun, W Ge</div>
-          <div class="venue">ACMMM, 2024</div>
-        </li>
-        <li>
-          <div class="title">Leveraging Smooth Deformation Augmentation for LiDAR Point Cloud Semantic Segmentation</div>
-          <div class="authors">S Qiu, J Chen, <strong>C Lai</strong>, H Lu, X Xue, J Pu</div>
-          <div class="venue">IEEE Transactions on Intelligent Vehicles, Vol. 9(2), pp. 3316-3329, 2024</div>
-        </li>
-        <li>
-          <div class="title">DADL: Double Asymmetric Distribution Learning for head pose estimation in wisdom museum</div>
-          <div class="authors">W Zhao, S Wang, X Wang, D Li, J Wang, <strong>C Lai</strong>, X Li</div>
-          <div class="venue">Journal of King Saud University-Computer and Information Sciences, Vol. 36(1), Article 101869, 2024</div>
-        </li>
-        <li>
-          <div class="title">Weakly Supervised Learning of Semantic Correspondence through Cascaded Online Correspondence Refinement</div>
-          <div class="authors">Y Huang, Y Sun, <strong>C Lai</strong>, Q Xu, X Wang, X Shen, W Ge</div>
-          <div class="venue">Proceedings of the IEEE/CVF International Conference on Computer Vision, 2023</div>
-        </li>
-        <li>
-          <div class="title">GCANet: Geometry cues-aware facial expression recognition based on graph convolutional networks</div>
-          <div class="authors">S Wang, A Zhao, <strong>C Lai</strong>, Q Zhang, D Li, Y Gao, L Dong, X Wang</div>
-          <div class="venue">Journal of King Saud University-Computer and Information Sciences, Vol. 35(7), Article 101605, 2023</div>
-        </li>
-        <li>
-          <div class="title">Infrared facial expression recognition via Gaussian-based label distribution learning in the dark illumination environment for human emotion detection</div>
-          <div class="authors">Z Zhang, <strong>C Lai</strong>, H Liu, YF Li</div>
-          <div class="venue">Neurocomputing, Vol. 409, pp. 341-350, 2020</div>
-        </li>
-""".strip()
+PUBS = [
+    {
+        "title": "Instruction-guided fusion of multi-layer visual features in Large Vision-Language Models",
+        "authors": "X Li, Y Zheng, H Chen, X Chen, Y Liang, <strong>C Lai</strong>, B Li, X Xue",
+        "venue": "Pattern Recognition, Vol. 170, Article 111932, 2026",
+    },
+    {
+        "title": "Multiple myeloma cell segmentation based on position prior information guidance in medical imaging",
+        "authors": "D Li, J Zhang, Y Li, Q Wang, H Shen, <strong>C Lai</strong>, Y Tan, F Zhou",
+        "venue": "Pattern Recognition, Vol. 179, Article 113744, 2026",
+    },
+    {
+        "title": "Adapting Multimodal Large Language Models for Video Question Answering by Capturing Question-Critical and Coherent Moments",
+        "authors": "H Wang, <strong>C Lai</strong>, W Ge",
+        "venue": "IEEE Transactions on Multimedia, Vol. 27, pp. 8737-8747, 2025",
+    },
+    {
+        "title": "Cross-Modal Complementary Learning and Template-Based Reasoning Chains for Future Event Prediction in Videos",
+        "authors": "<strong>C Lai</strong>, W Ge, X Xue",
+        "venue": "IEEE Transactions on Multimedia, Vol. 27, pp. 7497-7509, 2025",
+    },
+    {
+        "title": "VFE: A large-scale video future event description dataset for evaluating video temporal prediction",
+        "authors": "<strong>C Lai</strong>, H Wang",
+        "venue": "Applied Intelligence, Vol. 55, Article 713, 2025",
+    },
+    {
+        "title": "MKER: Multi-Modal Knowledge Extraction and Reasoning for Future Event Prediction",
+        "authors": "<strong>C Lai</strong>, S Qiu",
+        "venue": "Complex &amp; Intelligent Systems, Vol. 11(2), 2025",
+    },
+    {
+        "title": "视觉语言大模型的幻觉综述：成因、评估与治理",
+        "authors": "李煦, 朱睿, 陈小磊, 伍瑾轩, 郑毅, <strong>赖承杭</strong>, 梁宇轩, 李斌, 薛向阳",
+        "venue": "计算机研究与发展, 2025年第12期",
+    },
+    {
+        "title": "Object-Centric Cross-Modal Knowledge Reasoning for Future Event Prediction in Videos",
+        "authors": "<strong>C Lai</strong>, H Wang, W Ge, X Xue",
+        "venue": "IEEE Transactions on Circuits and Systems for Video Technology, Vol. 34, Issue 12, 2024",
+    },
+    {
+        "title": "Weakly Supervised Gaussian Contrastive Grounding with Large Multimodal Models for Video Question Answering",
+        "authors": "H Wang, <strong>C Lai</strong>, Y Sun, W Ge",
+        "venue": "ACMMM, 2024",
+    },
+    {
+        "title": "Leveraging Smooth Deformation Augmentation for LiDAR Point Cloud Semantic Segmentation",
+        "authors": "S Qiu, J Chen, <strong>C Lai</strong>, H Lu, X Xue, J Pu",
+        "venue": "IEEE Transactions on Intelligent Vehicles, Vol. 9(2), pp. 3316-3329, 2024",
+    },
+    {
+        "title": "DADL: Double Asymmetric Distribution Learning for head pose estimation in wisdom museum",
+        "authors": "W Zhao, S Wang, X Wang, D Li, J Wang, <strong>C Lai</strong>, X Li",
+        "venue": "Journal of King Saud University-Computer and Information Sciences, Vol. 36(1), Article 101869, 2024",
+    },
+    {
+        "title": "Weakly Supervised Learning of Semantic Correspondence through Cascaded Online Correspondence Refinement",
+        "authors": "Y Huang, Y Sun, <strong>C Lai</strong>, Q Xu, X Wang, X Shen, W Ge",
+        "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision, 2023",
+    },
+    {
+        "title": "GCANet: Geometry cues-aware facial expression recognition based on graph convolutional networks",
+        "authors": "S Wang, A Zhao, <strong>C Lai</strong>, Q Zhang, D Li, Y Gao, L Dong, X Wang",
+        "venue": "Journal of King Saud University-Computer and Information Sciences, Vol. 35(7), Article 101605, 2023",
+    },
+    {
+        "title": "Infrared facial expression recognition via Gaussian-based label distribution learning in the dark illumination environment for human emotion detection",
+        "authors": "Z Zhang, <strong>C Lai</strong>, H Liu, YF Li",
+        "venue": "Neurocomputing, Vol. 409, pp. 341-350, 2020",
+    },
+]
+
+
+def pubs_html() -> str:
+    blocks = []
+    for i, p in enumerate(PUBS, start=1):
+        blocks.append(
+            "        <li>\n"
+            f'          <div class="pub-num">[{i}]</div>\n'
+            f'          <div class="pub-body">\n'
+            f'            <div class="title">{p["title"]}</div>\n'
+            f'            <div class="authors">{p["authors"]}</div>\n'
+            f'            <div class="venue">{p["venue"]}</div>\n'
+            f'          </div>\n'
+            "        </li>"
+        )
+    return "\n".join(blocks)
 
 NAV_EN = [
     ("", "Home"),
@@ -281,7 +297,7 @@ def page(
     if show_sidebar:
         sidebar = f"""
     <aside class="sidebar">
-      <img class="avatar" src="{asset_prefix}images/profile.jpg" alt="{avatar_alt}">
+      <img class="avatar" src="{asset_prefix}images/profile.jpg?v=2" alt="{avatar_alt}">
       <h1 class="author-name">{author_name}</h1>
       <p class="author-bio">{author_bio}</p>
       <ul class="author-meta">
@@ -388,7 +404,7 @@ def main():
       {news_list(NEWS_ITEMS_EN)}
       <h2 id="papers" class="section-title">Selected Papers</h2>
       <ul class="pubs">
-{PUBS}
+{pubs_html()}
       </ul>
 """.strip()
     write(ROOT / "publications" / "index.html", page(
@@ -485,7 +501,7 @@ def main():
       {news_list(NEWS_ITEMS_ZH)}
       <h2 id="papers" class="section-title">代表性论文</h2>
       <ul class="pubs">
-{PUBS}
+{pubs_html()}
       </ul>
 """.strip()
     write(ROOT / "zh" / "publications" / "index.html", page(
