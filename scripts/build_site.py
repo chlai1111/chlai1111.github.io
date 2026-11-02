@@ -438,27 +438,27 @@ def main():
       <h1 class="page-title">👥 Students</h1>
       <h3 class="subhead">Master’s Students · Class of 2025</h3>
       <ul class="plain-list">
-        <li>Xue Zekun (薛泽坤) — Wenzhou University</li>
-        <li>Chen Jiong (陈炅) — Wenzhou University</li>
-        <li>Wu Boxuan (吴波炫) — Wenzhou Medical University</li>
+        <li>Xue Zekun (薛泽坤) · Wenzhou University</li>
+        <li>Chen Jiong (陈炅) · Wenzhou University</li>
+        <li>Wu Boxuan (吴波炫) · Wenzhou University</li>
       </ul>
       <h3 class="subhead">Master’s Students · Class of 2026</h3>
       <ul class="plain-list">
-        <li>Xie Yi (谢益)</li>
-        <li>Lu Jiaming (陆佳明)</li>
-        <li>Chen Yuxuan (陈雨轩)</li>
-        <li>Zhang Yangliu (张杨柳)</li>
-        <li>Xu Junchang (许俊昌)</li>
+        <li>Xie Yi (谢益) · Wenzhou University</li>
+        <li>Lu Jiaming (陆佳明) · Wenzhou University</li>
+        <li>Chen Yuxuan (陈雨轩) · Wenzhou University</li>
+        <li>Zhang Yangliu (张杨柳) · Wenzhou University</li>
+        <li>Xu Junchang (许俊昌) · Wenzhou University</li>
       </ul>
       <h3 class="subhead">Undergraduate Students · Class of 2025</h3>
       <ul class="plain-list">
-        <li>Huang Xiaorui (黄小芮)</li>
-        <li>Ye Mengya (叶梦雅)</li>
-        <li>Lü Dingtian (吕鼎天)</li>
+        <li>Huang Xiaorui (黄小芮) · Wenzhou University</li>
+        <li>Ye Mengya (叶梦雅) · Wenzhou University</li>
+        <li>Lü Dingtian (吕鼎天) · Wenzhou University</li>
       </ul>
       <h3 class="subhead">Undergraduate Students · Class of 2026</h3>
       <ul class="plain-list">
-        <li>Guo Qiming (郭骐铭)</li>
+        <li>Guo Qiming (郭骐铭) · Wenzhou University</li>
       </ul>
 """.strip()
     write(ROOT / "students" / "index.html", page(
@@ -536,27 +536,27 @@ def main():
       <h1 class="page-title">👥 学生</h1>
       <h3 class="subhead">硕士研究生 · 25级</h3>
       <ul class="plain-list">
-        <li>薛泽坤（温州大学）</li>
-        <li>陈炅（温州大学）</li>
-        <li>吴波炫（温州医科大学）</li>
+        <li>薛泽坤（Xue Zekun）· 温州大学</li>
+        <li>陈炅（Chen Jiong）· 温州大学</li>
+        <li>吴波炫（Wu Boxuan）· 温州大学</li>
       </ul>
       <h3 class="subhead">硕士研究生 · 26级</h3>
       <ul class="plain-list">
-        <li>谢益</li>
-        <li>陆佳明</li>
-        <li>陈雨轩</li>
-        <li>张杨柳</li>
-        <li>许俊昌</li>
+        <li>谢益（Xie Yi）· 温州大学</li>
+        <li>陆佳明（Lu Jiaming）· 温州大学</li>
+        <li>陈雨轩（Chen Yuxuan）· 温州大学</li>
+        <li>张杨柳（Zhang Yangliu）· 温州大学</li>
+        <li>许俊昌（Xu Junchang）· 温州大学</li>
       </ul>
       <h3 class="subhead">本科生 · 25级</h3>
       <ul class="plain-list">
-        <li>黄小芮</li>
-        <li>叶梦雅</li>
-        <li>吕鼎天</li>
+        <li>黄小芮（Huang Xiaorui）· 温州大学</li>
+        <li>叶梦雅（Ye Mengya）· 温州大学</li>
+        <li>吕鼎天（Lü Dingtian）· 温州大学</li>
       </ul>
       <h3 class="subhead">本科生 · 26级</h3>
       <ul class="plain-list">
-        <li>郭骐铭</li>
+        <li>郭骐铭（Guo Qiming）· 温州大学</li>
       </ul>
 """.strip()
     write(ROOT / "zh" / "students" / "index.html", page(
