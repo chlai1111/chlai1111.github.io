@@ -297,7 +297,7 @@ def page(
     if show_sidebar:
         sidebar = f"""
     <aside class="sidebar">
-      <img class="avatar" src="{asset_prefix}images/profile.jpg?v=2" alt="{avatar_alt}">
+      <img class="avatar" src="{asset_prefix}images/profile.jpg?v=3" alt="{avatar_alt}">
       <h1 class="author-name">{author_name}</h1>
       <p class="author-bio">{author_bio}</p>
       <ul class="author-meta">
