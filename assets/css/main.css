@@ -118,6 +118,12 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
   font-size: 0.95rem;
 }
+.author-lab {
+  margin: 0.2rem 0 0;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
 .author-meta {
   list-style: none;
   padding: 0;

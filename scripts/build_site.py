@@ -258,6 +258,7 @@ def page(
         nav = NAV_ZH
         author_name = "赖承杭（Chenghang Lai）"
         author_bio = "温州大学"
+        author_lab = "灵境智能研究组负责人"
         meta_loc = "中国 · 温州"
         label_email = "邮箱"
         aria_nav = "主导航"
@@ -275,6 +276,7 @@ def page(
         nav = NAV_EN
         author_name = "Chenghang Lai (赖承杭)"
         author_bio = "Wenzhou University"
+        author_lab = "Director, LingVision Lab"
         meta_loc = "Wenzhou, China"
         label_email = "Email"
         aria_nav = "Primary"
@@ -296,6 +298,7 @@ def page(
       <img class="avatar" src="{asset_prefix}images/profile.jpg?v=3" alt="{avatar_alt}">
       <h1 class="author-name">{author_name}</h1>
       <p class="author-bio">{author_bio}</p>
+      <p class="author-lab">{author_lab}</p>
       <ul class="author-meta">
         <li><span class="label">📍</span> {meta_loc}</li>
         <li><span class="label">{label_email}</span> <a href="mailto:chlai21@m.fudan.edu.cn">chlai21@m.fudan.edu.cn</a></li>
@@ -369,7 +372,8 @@ def main():
       <h1 id="biography" class="page-title">Biography</h1>
       <div class="bio">
         <p>
-          I am a <strong>lecturer at <a href="https://www.wzu.edu.cn/">Wenzhou University (温州大学)</a></strong>.
+          I am a <strong>lecturer at <a href="https://www.wzu.edu.cn/">Wenzhou University (温州大学)</a></strong>
+          and the <strong>director of LingVision Lab (灵境智能研究组)</strong>.
           I received my Ph.D. from the <a href="https://cs.fudan.edu.cn/">School of Computer Science</a>,
           <a href="https://fudan.edu.cn/">Fudan University</a> (2021.9–2025.6).
           <strong>My research focuses on multimodal large language models, world models, and multi-agent systems, with applications in general video understanding, medical imaging, industrial inspection, and sports analytics.</strong>
@@ -382,7 +386,7 @@ def main():
           <a href="https://github.com/chlai1111">GitHub</a>
         </p>
         <p class="recruit-note">
-          I admit a limited number of students each year. Outstanding master’s and undergraduate students who are interested in our research are welcome to apply to join the group.
+          LingVision Lab admits a limited number of students each year. Outstanding master’s and undergraduate students who are interested in our research are welcome to apply to join the lab.
         </p>
       </div>
 
@@ -390,7 +394,7 @@ def main():
 """.strip()
     write(ROOT / "index.html", page(
         lang="en", depth=0, slug="", title="Chenghang Lai (赖承杭) — Personal Homepage",
-        description="Academic homepage of Chenghang Lai, lecturer at Wenzhou University. Research interests: multimodal large language models, world models, and multi-agent systems.",
+        description="Academic homepage of Chenghang Lai, lecturer at Wenzhou University and director of LingVision Lab. Research interests: multimodal large language models, world models, and multi-agent systems.",
         active="", main_html=en_home, show_sidebar=True,
     ))
 
@@ -468,7 +472,8 @@ def main():
       <h1 id="biography" class="page-title">个人简介</h1>
       <div class="bio">
         <p>
-          我是<strong><a href="https://www.wzu.edu.cn/">温州大学</a>讲师</strong>。
+          我是<strong><a href="https://www.wzu.edu.cn/">温州大学</a>讲师</strong>，
+          <strong>灵境智能研究组（LingVision Lab）负责人</strong>。
           博士毕业于<a href="https://fudan.edu.cn/">复旦大学</a>
           <a href="https://cs.fudan.edu.cn/">计算机科学技术学院</a>（2021.9–2025.6）。
           <strong>主要研究多模态大语言模型、世界模型与多智能体系统，并面向通用视频理解、医学影像、工业检测与体育分析等场景开展应用研究。</strong>
@@ -479,7 +484,7 @@ def main():
           <a href="https://github.com/chlai1111">GitHub</a>
         </p>
         <p class="recruit-note">
-          课题组每年招生名额有限，欢迎对相关研究方向感兴趣、基础扎实的优秀硕士生与本科生联系加入。
+          灵境智能研究组每年招生名额有限，欢迎对相关研究方向感兴趣、基础扎实的优秀硕士生与本科生联系加入。
         </p>
       </div>
 
@@ -487,7 +492,7 @@ def main():
 """.strip()
     write(ROOT / "zh" / "index.html", page(
         lang="zh", depth=0, slug="", title="赖承杭（Chenghang Lai）— 个人主页",
-        description="温州大学讲师赖承杭的学术主页。研究方向：多模态大语言模型、世界模型与多智能体系统。",
+        description="温州大学讲师、灵境智能研究组（LingVision Lab）负责人赖承杭的学术主页。研究方向：多模态大语言模型、世界模型与多智能体系统。",
         active="", main_html=zh_home, show_sidebar=True,
     ))
 
