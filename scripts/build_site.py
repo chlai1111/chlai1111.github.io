@@ -206,8 +206,7 @@ def pubs_html() -> str:
             f'          <div class="pub-num">[{i}]</div>\n'
             f'          <div class="pub-body">\n'
             f'            <div class="title">{p["title"]}</div>\n'
-            f'            <div class="authors">{p["authors"]}</div>\n'
-            f'            <div class="venue">{p["venue"]}</div>\n'
+            f'            <div class="meta"><span class="authors">{p["authors"]}</span><span class="venue-sep">. </span><span class="venue">{p["venue"]}</span></div>\n'
             f'          </div>\n'
             "        </li>"
         )
