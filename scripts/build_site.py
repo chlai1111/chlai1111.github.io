@@ -199,14 +199,12 @@ PUBS = """
 
 NAV_EN = [
     ("", "Home"),
-    ("news/", "News"),
     ("publications/", "Publications"),
     ("teaching/", "Teaching"),
     ("students/", "Students"),
 ]
 NAV_ZH = [
     ("", "首页"),
-    ("news/", "动态"),
     ("publications/", "论文"),
     ("teaching/", "教学"),
     ("students/", "学生"),
@@ -377,10 +375,6 @@ def main():
       </div>
 
 {RESEARCH_EN}
-
-      <h2 id="recent-news" class="section-title">🔥 Recent News</h2>
-      {news_list(NEWS_ITEMS_EN[:4])}
-      <p class="more-link"><a href="news/">All news →</a></p>
 """.strip()
     write(ROOT / "index.html", page(
         lang="en", depth=0, slug="", title="Chenghang Lai (赖承杭) — Personal Homepage",
@@ -388,18 +382,20 @@ def main():
         active="", main_html=en_home, show_sidebar=True,
     ))
 
-    write(ROOT / "news" / "index.html", page(
-        lang="en", depth=1, slug="news/", title="News — Chenghang Lai",
-        description="News and updates from Chenghang Lai.",
-        active="news", main_html=f'<h1 class="page-title">🔥 News</h1>\n      {news_list(NEWS_ITEMS_EN)}',
-        show_sidebar=False,
-    ))
-
+    pubs_en = f"""
+      <h1 class="page-title">📎 Publications</h1>
+      <h2 id="news" class="section-title">🔥 Recent Acceptances</h2>
+      {news_list(NEWS_ITEMS_EN)}
+      <h2 id="papers" class="section-title">Selected Papers</h2>
+      <ul class="pubs">
+{PUBS}
+      </ul>
+""".strip()
     write(ROOT / "publications" / "index.html", page(
         lang="en", depth=1, slug="publications/", title="Publications — Chenghang Lai",
-        description="Selected publications of Chenghang Lai.",
+        description="Selected publications and recent acceptances of Chenghang Lai.",
         active="publications",
-        main_html=f'<h1 class="page-title">📎 Publications</h1>\n      <ul class="pubs">\n{PUBS}\n      </ul>',
+        main_html=pubs_en,
         show_sidebar=False,
     ))
 
@@ -476,10 +472,6 @@ def main():
       </div>
 
 {RESEARCH_ZH}
-
-      <h2 id="recent-news" class="section-title">🔥 近期动态</h2>
-      {news_list(NEWS_ITEMS_ZH[:4])}
-      <p class="more-link"><a href="news/">全部动态 →</a></p>
 """.strip()
     write(ROOT / "zh" / "index.html", page(
         lang="zh", depth=0, slug="", title="赖承杭（Chenghang Lai）— 个人主页",
@@ -487,18 +479,20 @@ def main():
         active="", main_html=zh_home, show_sidebar=True,
     ))
 
-    write(ROOT / "zh" / "news" / "index.html", page(
-        lang="zh", depth=1, slug="news/", title="动态 — 赖承杭",
-        description="赖承杭的学术动态与论文接收信息。",
-        active="news", main_html=f'<h1 class="page-title">🔥 动态</h1>\n      {news_list(NEWS_ITEMS_ZH)}',
-        show_sidebar=False,
-    ))
-
+    pubs_zh = f"""
+      <h1 class="page-title">📎 论文</h1>
+      <h2 id="news" class="section-title">🔥 近期录用</h2>
+      {news_list(NEWS_ITEMS_ZH)}
+      <h2 id="papers" class="section-title">代表性论文</h2>
+      <ul class="pubs">
+{PUBS}
+      </ul>
+""".strip()
     write(ROOT / "zh" / "publications" / "index.html", page(
         lang="zh", depth=1, slug="publications/", title="论文 — 赖承杭",
-        description="赖承杭的论文列表。",
+        description="赖承杭的论文列表与近期录用动态。",
         active="publications",
-        main_html=f'<h1 class="page-title">📎 论文</h1>\n      <ul class="pubs">\n{PUBS}\n      </ul>',
+        main_html=pubs_zh,
         show_sidebar=False,
     ))
 
