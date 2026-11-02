@@ -203,11 +203,8 @@ def pubs_html() -> str:
     for i, p in enumerate(PUBS, start=1):
         blocks.append(
             "        <li>\n"
-            f'          <div class="pub-num">[{i}]</div>\n'
-            f'          <div class="pub-body">\n'
-            f'            <div class="title">{p["title"]}</div>\n'
-            f'            <div class="meta"><span class="authors">{p["authors"]}</span><span class="venue-sep">. </span><span class="venue">{p["venue"]}</span></div>\n'
-            f'          </div>\n'
+            f'          <div class="pub-head"><span class="pub-num">[{i}]</span> <span class="title">{p["title"]}</span></div>\n'
+            f'          <div class="meta"><span class="authors">{p["authors"]}</span><span class="venue-sep">. </span><span class="venue">{p["venue"]}</span></div>\n'
             "        </li>"
         )
     return "\n".join(blocks)
